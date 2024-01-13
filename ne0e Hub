@@ -31,6 +31,17 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
+	Name = "Lucky Block"
+})
+
+Tab:AddButton({
+	Name = "ne0e's Lucky Block Gui",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xper1tiz/ne0e/main/Lucky%20Block", true))()
+  	end    
+})
+
+local Section = Tab:AddSection({
 	Name = "ne0e's Boombox Gui"
 })
 
