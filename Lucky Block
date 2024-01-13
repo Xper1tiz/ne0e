@@ -1,0 +1,106 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ne0e = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local OpenGu = Instance.new("Frame")
+local Open = Instance.new("TextButton")
+
+--Properties:
+
+ne0e.Name = "ne0e"
+ne0e.Parent = game.CoreGui
+
+Main.Active = true
+Main.Draggable = true
+
+Main.Name = "Main"
+Main.Parent = ne0e
+Main.BackgroundColor3 = Color3.fromRGB(74, 192, 255)
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.139408126, 0, 0.172069833, 0)
+Main.Size = UDim2.new(0, 202, 0, 169)
+Main.Visible = false
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(43, 156, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-3.02154234e-07, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 202, 0, 50)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "Lucky Block Gui"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 20.000
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(43, 156, 255)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(-7.55385585e-08, 0, 0.761904716, 0)
+TextLabel_2.Size = UDim2.new(0, 201, 0, 40)
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "Made By ne0e"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 20.000
+
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(43, 156, 255)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.111893155, 0, 0.369850665, 0)
+TextButton.Size = UDim2.new(0, 155, 0, 52)
+TextButton.Font = Enum.Font.Unknown
+TextButton.Text = "Click"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 40.000
+TextButton.MouseButton1Down:connect(function()
+	game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+end)
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.879219711, 0, 0, 0)
+Close.Size = UDim2.new(0, 24, 0, 26)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextSize = 14.000
+Close.MouseButton1Down:connect(function()
+	Main.Visible = false
+	OpenGu.Visible = true
+end)
+
+OpenGu.Name = "Open Guı"
+OpenGu.Parent = ne0e
+OpenGu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenGu.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OpenGu.BorderSizePixel = 0
+OpenGu.Position = UDim2.new(-0.00043501216, 0, 0.38219285, 0)
+OpenGu.Size = UDim2.new(0, 104, 0, 36)
+
+Open.Name = "Open"
+Open.Parent = OpenGu
+Open.BackgroundColor3 = Color3.fromRGB(80, 185, 255)
+Open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0.00503210118, 0, 0, 0)
+Open.Size = UDim2.new(0, 110, 0, 36)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open Gui"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextSize = 14.000
+Open.MouseButton1Down:connect(function()
+	Main.Visible = true
+	OpenGu.Visible = false
+end)
