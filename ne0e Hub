@@ -5649,17 +5649,6 @@ Tab:AddButton({
   	end    
 })
 
-local Section = Tab:AddSection({
-	Name = "Hide And Seek"
-})
-
-Tab:AddButton({
-	Name = "Femboy.Things Hub",
-	Callback = function()
-        loadstring(game:HttpGet('https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua'))() 
-  	end    
-})
-
 
 
 
