@@ -1079,6 +1079,14 @@ Section:NewButton("Hidden Boombox (1)", "", function()
                                                     loadstring(game:HttpGet('https://antilu.me/s.lua'))()
                                                 end)
 
+                                                Section:NewButton("Fanta Hub", "", function()
+                                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/kyakuryc/fanta-hub/main/fanta_hub_raw.txt",true))()
+                                                end)
+
+                                                Section:NewButton("Lucious Hub", "", function()
+                                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/ggrimmed/Lucious-Ware/main/cracked_lucious_ware.lua"))()
+                                                end)
+
 
                                                    
 
