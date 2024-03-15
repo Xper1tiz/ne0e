@@ -37,7 +37,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "ne0e's Boombox Gui",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xper1tiz/ne0e/main/ne0e's%20Boombox%20Hub",true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xper1tiz/Boombox-Hub-Original-/main/ne0e's%20Hub",true))()
   	end    
 })
 
